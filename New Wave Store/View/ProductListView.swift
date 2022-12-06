@@ -13,7 +13,7 @@ struct ProductListView: View {
     
     var body: some View {
             HStack(alignment: .top){
-                Image(product.name)
+                Image(product.picture)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 100, height: 100)

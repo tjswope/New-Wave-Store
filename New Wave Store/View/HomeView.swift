@@ -10,12 +10,18 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject var products: ProductList
+    @Binding var viewState: ViewState
+    @Binding var index: Int
     
     var body: some View {
         ScrollView{
             ForEach($products.products.indices){ index in
                 ProductListView(product: $products.products[index])
-                    .padding([.leading, .trailing, .bottom],5)
+                    .padding([.bottom],5)
+                    .onTapGesture {
+                        self.index = index
+                        self.viewState = .detail
+                    }
             }
         }
     }
@@ -23,7 +29,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
-            .environmentObject(ProductList())
+        HomeView(viewState: Binding.constant(ViewState.list), index: Binding.constant(0))
+         .environmentObject(ProductList())
     }
 }
