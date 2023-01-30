@@ -36,7 +36,7 @@ struct CartItemView: View {
                         .font(Constants.textFont)
                         .padding([.trailing, .leading])
                     Picker("quantity: ", selection:  $product.quantity){
-                        ForEach(0..<10){number in
+                        ForEach(0..<100){number in
                             Text("\(number)")
                         }
                     }

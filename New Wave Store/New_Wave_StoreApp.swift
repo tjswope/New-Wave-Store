@@ -17,6 +17,7 @@ struct New_Wave_StoreApp: App {
             ContentView()
                 .environmentObject(products)
                 .environmentObject(cart)
+            
         }
     }
 }
