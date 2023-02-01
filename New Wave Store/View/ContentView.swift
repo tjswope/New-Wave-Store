@@ -8,39 +8,48 @@
 import SwiftUI
 
 enum ViewState{
-    case list, detail
+    case list, detail, authentication, login, signUp
 }
 
 
 struct ContentView: View {
     @EnvironmentObject var products: ProductList
-    @State var viewState: ViewState = .list
+    @State var viewState: ViewState = .authentication
     @State var index: Int = 0
     
     var body: some View {
         
-        TabView{
-            if viewState == .list{
-                HomeView(viewState: $viewState, index: $index)
-                    .tabItem {
-                        Image(systemName: "house")
-                        Text("home")
-                    }
-            } else {
-                ProductDetailView(product: $products.products[index], viewState: $viewState)
-                    .tabItem {
-                    Image(systemName: "house")
-                    Text("home")
-                }
-                    
-            }
+        if viewState == .authentication{
+            AuthenticationView(viewState: $viewState)
+        } else if viewState == .login{
+            LoginView(viewState: $viewState)
+        } else if viewState == .signUp{
+            SignupView(viewState: $viewState)
+        } else {
             
-            CartView()
-                .tabItem {
-                    Image(systemName: "cart")
-                    Text("cart")
+            TabView{
+                if viewState == .list{
+                    HomeView(viewState: $viewState, index: $index)
+                        .tabItem {
+                            Image(systemName: "house")
+                            Text("home")
+                        }
+                } else {
+                    ProductDetailView(product: $products.products[index], viewState: $viewState)
+                        .tabItem {
+                            Image(systemName: "house")
+                            Text("home")
+                        }
+                    
                 }
-        }.accentColor(Color.highlight)
+                
+                CartView()
+                    .tabItem {
+                        Image(systemName: "cart")
+                        Text("cart")
+                    }
+            }.accentColor(Color.highlight)
+        }
     }
 }
 
