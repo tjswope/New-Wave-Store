@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0950A54F298BE9BB00838BE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0950A54E298BE9BB00838BE0 /* GoogleService-Info.plist */; };
 		096499442938D9880081086D /* CartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096499432938D9880081086D /* CartItemView.swift */; };
 		096499462938DB700081086D /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096499452938DB700081086D /* CartView.swift */; };
 		0964995629392F930081086D /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964995529392F930081086D /* Cart.swift */; };
@@ -23,9 +24,11 @@
 		09D6F8472927C4BA009F4573 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6F8462927C4BA009F4573 /* ProductListView.swift */; };
 		09D6F8492927F871009F4573 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6F8482927F871009F4573 /* HomeView.swift */; };
 		09FA29162934EB6100A68590 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA29152934EB6100A68590 /* ProductDetailView.swift */; };
+		A096D43C7509D1FAF3E5A0C7 /* Pods_New_Wave_Store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4217C98DA4433FC1064F233F /* Pods_New_Wave_Store.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0950A54E298BE9BB00838BE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		096499432938D9880081086D /* CartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemView.swift; sourceTree = "<group>"; };
 		096499452938DB700081086D /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		0964995529392F930081086D /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
@@ -43,6 +46,9 @@
 		09D6F8462927C4BA009F4573 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		09D6F8482927F871009F4573 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		09FA29152934EB6100A68590 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		37ABB2A8AB8FD532F49F7CF8 /* Pods-New Wave Store.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New Wave Store.release.xcconfig"; path = "Target Support Files/Pods-New Wave Store/Pods-New Wave Store.release.xcconfig"; sourceTree = "<group>"; };
+		4217C98DA4433FC1064F233F /* Pods_New_Wave_Store.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_New_Wave_Store.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0976A478CEF0F0E7258C72 /* Pods-New Wave Store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New Wave Store.debug.xcconfig"; path = "Target Support Files/Pods-New Wave Store/Pods-New Wave Store.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A096D43C7509D1FAF3E5A0C7 /* Pods_New_Wave_Store.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +78,8 @@
 			children = (
 				09D6F82F2926B269009F4573 /* New Wave Store */,
 				09D6F82E2926B269009F4573 /* Products */,
+				407D8CEB82D881D1A7F0A1B4 /* Pods */,
+				991FDE50EE5CF98A90507AC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +99,7 @@
 				09D6F8442927C491009F4573 /* Model */,
 				09D6F8302926B269009F4573 /* New_Wave_StoreApp.swift */,
 				09D6F8342926B26A009F4573 /* Assets.xcassets */,
+				0950A54E298BE9BB00838BE0 /* GoogleService-Info.plist */,
 				09D6F8362926B26A009F4573 /* Preview Content */,
 			);
 			path = "New Wave Store";
@@ -127,6 +137,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		407D8CEB82D881D1A7F0A1B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F0976A478CEF0F0E7258C72 /* Pods-New Wave Store.debug.xcconfig */,
+				37ABB2A8AB8FD532F49F7CF8 /* Pods-New Wave Store.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		991FDE50EE5CF98A90507AC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4217C98DA4433FC1064F233F /* Pods_New_Wave_Store.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09D6F83B2926B26A009F4573 /* Build configuration list for PBXNativeTarget "New Wave Store" */;
 			buildPhases = (
+				7D1257151482AC6156C54006 /* [CP] Check Pods Manifest.lock */,
 				09D6F8292926B269009F4573 /* Sources */,
 				09D6F82A2926B269009F4573 /* Frameworks */,
 				09D6F82B2926B269009F4573 /* Resources */,
+				9BB53EE2C891557512E4B03B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,10 +216,53 @@
 			files = (
 				09D6F8382926B26A009F4573 /* Preview Assets.xcassets in Resources */,
 				09D6F8352926B26A009F4573 /* Assets.xcassets in Resources */,
+				0950A54F298BE9BB00838BE0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D1257151482AC6156C54006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-New Wave Store-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BB53EE2C891557512E4B03B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-New Wave Store/Pods-New Wave Store-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-New Wave Store/Pods-New Wave Store-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-New Wave Store/Pods-New Wave Store-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09D6F8292926B269009F4573 /* Sources */ = {
@@ -333,6 +405,7 @@
 		};
 		09D6F83C2926B26A009F4573 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0976A478CEF0F0E7258C72 /* Pods-New Wave Store.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,6 +435,7 @@
 		};
 		09D6F83D2926B26A009F4573 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37ABB2A8AB8FD532F49F7CF8 /* Pods-New Wave Store.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

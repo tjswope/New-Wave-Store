@@ -1,0 +1,6 @@
+framework module Pods_New_Wave_Store {
+  umbrella header "Pods-New Wave Store-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct SignupView: View {
     @State var userName: String = ""
@@ -35,7 +36,14 @@ struct SignupView: View {
                     .padding()
 
                 Button {
-                    viewState = .list
+                    Auth.auth().createUser(withEmail: userName, password: password) { user, error in
+                        if let _ = user{
+                            print("success")
+                            viewState = .list
+                        } else {
+                            print(error!.localizedDescription)
+                        }
+                    }
                 } label: {
                     Text("Sign up")
                         .font(Constants.buttonFont)
