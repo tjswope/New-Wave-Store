@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094DC8AF29914C9400B6838D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094DC8AE29914C9400B6838D /* UserInfo.swift */; };
+		094DC8B12991536200B6838D /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094DC8B02991536200B6838D /* ForgotPassword.swift */; };
 		0950A54F298BE9BB00838BE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0950A54E298BE9BB00838BE0 /* GoogleService-Info.plist */; };
 		096499442938D9880081086D /* CartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096499432938D9880081086D /* CartItemView.swift */; };
 		096499462938DB700081086D /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096499452938DB700081086D /* CartView.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		094DC8AE29914C9400B6838D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		094DC8B02991536200B6838D /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		0950A54E298BE9BB00838BE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		096499432938D9880081086D /* CartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemView.swift; sourceTree = "<group>"; };
 		096499452938DB700081086D /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 				0974A32A2988016A00A6FF41 /* AuthenticationView.swift */,
 				0974A32C298804A300A6FF41 /* LoginView.swift */,
 				0974A32E298805DF00A6FF41 /* SignupView.swift */,
+				094DC8B02991536200B6838D /* ForgotPassword.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 				09D6F8402927BE64009F4573 /* ProductList.swift */,
 				09D6F83E2927B44A009F4573 /* Product.swift */,
 				0964995529392F930081086D /* Cart.swift */,
+				094DC8AE29914C9400B6838D /* UserInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 				0974A32F298805DF00A6FF41 /* SignupView.swift in Sources */,
 				096499462938DB700081086D /* CartView.swift in Sources */,
 				09D6F8472927C4BA009F4573 /* ProductListView.swift in Sources */,
+				094DC8B12991536200B6838D /* ForgotPassword.swift in Sources */,
 				0974A32B2988016A00A6FF41 /* AuthenticationView.swift in Sources */,
 				09FA29162934EB6100A68590 /* ProductDetailView.swift in Sources */,
 				09D6F8492927F871009F4573 /* HomeView.swift in Sources */,
@@ -282,6 +289,7 @@
 				096499442938D9880081086D /* CartItemView.swift in Sources */,
 				0974A32D298804A300A6FF41 /* LoginView.swift in Sources */,
 				09D6F8312926B269009F4573 /* New_Wave_StoreApp.swift in Sources */,
+				094DC8AF29914C9400B6838D /* UserInfo.swift in Sources */,
 				09D6F83F2927B44A009F4573 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

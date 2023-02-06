@@ -11,6 +11,7 @@ import FirebaseAuth
 struct HomeView: View {
     
     @EnvironmentObject var products: ProductList
+    @EnvironmentObject var userInfo: UserInfo
     @Binding var viewState: ViewState
     @Binding var index: Int
     
@@ -29,7 +30,7 @@ struct HomeView: View {
             
             Button {
                 try! Auth.auth().signOut()
-
+                userInfo.loggedIn = false
                 viewState = .authentication
             } label: {
                 Text("Sign out")

@@ -1,14 +1,14 @@
 //
-//  LoginView.swift
+//  ForgotPassword.swift
 //  New Wave Store
 //
-//  Created by Swope, Thomas on 1/30/23.
+//  Created by Swope, Thomas on 2/6/23.
 //
 
 import SwiftUI
 import FirebaseAuth
 
-struct LoginView: View {
+struct ForgotPassword: View {
     
     @EnvironmentObject var userInfo: UserInfo
     @Binding var viewState: ViewState
@@ -31,21 +31,17 @@ struct LoginView: View {
                     .font(Constants.textFont)
                     .padding()
                 
-                SecureField("password", text: $userInfo.password)
-                    .font(Constants.textFont)
-                    .padding()
-                
+
                 Button {
-                    Auth.auth().signIn(withEmail: userInfo.username, password: userInfo.password) { user, error in
-                        if let _ = user {
-                            userInfo.loggedIn = true
-                            viewState = .list
+                    Auth.auth().sendPasswordReset(withEmail: userInfo.username) { error in
+                        if let error = error{
+                            print(error.localizedDescription)
                         } else {
-                            print(error?.localizedDescription)
+                            self.viewState = .authentication
                         }
                     }
                 } label: {
-                    Text("Login")
+                    Text("Reset Password")
                         .font(Constants.buttonFont)
                         .frame(width: 300, height: 50)
                         .background(Color.white.opacity(0.8))
@@ -61,25 +57,14 @@ struct LoginView: View {
                         .background(Color.white.opacity(0.8))
                         .cornerRadius(20)
                 }.padding()
-                
-                Button {
-                    viewState = .forgotPassword
-                } label: {
-                    Text("forgot password")
-                        .font(Constants.buttonFont)
-                        .frame(width: 300, height: 50)
-                        .background(Color.white.opacity(0.8))
-                        .cornerRadius(20)
-                }.padding()
-                
                 Spacer()
             }
         }.edgesIgnoringSafeArea(.all)
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct ForgotPassword_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(viewState: Binding.constant(.login))
+        ForgotPassword(viewState: Binding.constant(.forgotPassword))
     }
 }

@@ -9,8 +9,7 @@ import SwiftUI
 import FirebaseAuth
 
 struct SignupView: View {
-    @State var userName: String = ""
-    @State var password: String = ""
+    @EnvironmentObject var userInfo: UserInfo
     @Binding var viewState: ViewState
     
     var body: some View {
@@ -27,19 +26,20 @@ struct SignupView: View {
                 
                 Spacer()
                 
-                TextField("user name or email address", text: $userName)
+                TextField("user name or email address", text: $userInfo.username)
                     .font(Constants.textFont)
                     .padding()
                     
-                SecureField("password", text: $password)
+                SecureField("password", text: $userInfo.password)
                     .font(Constants.textFont)
                     .padding()
 
                 Button {
-                    Auth.auth().createUser(withEmail: userName, password: password) { user, error in
+                    Auth.auth().createUser(withEmail: userInfo.username, password: userInfo.password) { user, error in
                         if let _ = user{
                             print("success")
                             viewState = .list
+                            userInfo.loggedIn = true
                         } else {
                             print(error!.localizedDescription)
                         }
@@ -52,6 +52,15 @@ struct SignupView: View {
                         .cornerRadius(20)
                 }.padding()
                 
+                Button {
+                    viewState = .authentication
+                } label: {
+                    Text("<< back")
+                        .font(Constants.buttonFont)
+                        .frame(width: 300, height: 50)
+                        .background(Color.white.opacity(0.8))
+                        .cornerRadius(20)
+                }.padding()
                 Spacer()
             }
         }.edgesIgnoringSafeArea(.all)
