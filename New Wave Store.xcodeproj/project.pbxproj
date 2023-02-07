@@ -10,9 +10,11 @@
 		0950A54F298BE9BB00838BE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0950A54E298BE9BB00838BE0 /* GoogleService-Info.plist */; };
 		095455E529916ABE00F0C94E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095455E429916ABE00F0C94E /* UserInfo.swift */; };
 		095455E7299170A000F0C94E /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095455E6299170A000F0C94E /* ForgotPasswordView.swift */; };
+		095455E92992C84D00F0C94E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095455E82992C84D00F0C94E /* ImagePicker.swift */; };
 		096499442938D9880081086D /* CartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096499432938D9880081086D /* CartItemView.swift */; };
 		096499462938DB700081086D /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096499452938DB700081086D /* CartView.swift */; };
 		0964995629392F930081086D /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964995529392F930081086D /* Cart.swift */; };
+		096A8F162992CA4600084DC2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096A8F152992CA4600084DC2 /* SettingsView.swift */; };
 		0974A32B2988016A00A6FF41 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974A32A2988016A00A6FF41 /* AuthenticationView.swift */; };
 		0974A32D298804A300A6FF41 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974A32C298804A300A6FF41 /* LoginView.swift */; };
 		0974A32F298805DF00A6FF41 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974A32E298805DF00A6FF41 /* SignupView.swift */; };
@@ -33,9 +35,11 @@
 		0950A54E298BE9BB00838BE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		095455E429916ABE00F0C94E /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		095455E6299170A000F0C94E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		095455E82992C84D00F0C94E /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		096499432938D9880081086D /* CartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemView.swift; sourceTree = "<group>"; };
 		096499452938DB700081086D /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		0964995529392F930081086D /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		096A8F152992CA4600084DC2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0974A32A2988016A00A6FF41 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		0974A32C298804A300A6FF41 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0974A32E298805DF00A6FF41 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
@@ -138,7 +142,9 @@
 				09D6F8482927F871009F4573 /* HomeView.swift */,
 				09FA29152934EB6100A68590 /* ProductDetailView.swift */,
 				096499432938D9880081086D /* CartItemView.swift */,
+				095455E82992C84D00F0C94E /* ImagePicker.swift */,
 				096499452938DB700081086D /* CartView.swift */,
+				096A8F152992CA4600084DC2 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +284,8 @@
 				0974A32F298805DF00A6FF41 /* SignupView.swift in Sources */,
 				096499462938DB700081086D /* CartView.swift in Sources */,
 				095455E7299170A000F0C94E /* ForgotPasswordView.swift in Sources */,
+				096A8F162992CA4600084DC2 /* SettingsView.swift in Sources */,
+				095455E92992C84D00F0C94E /* ImagePicker.swift in Sources */,
 				09D6F8472927C4BA009F4573 /* ProductListView.swift in Sources */,
 				0974A32B2988016A00A6FF41 /* AuthenticationView.swift in Sources */,
 				09FA29162934EB6100A68590 /* ProductDetailView.swift in Sources */,

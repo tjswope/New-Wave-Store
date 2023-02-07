@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import FirebaseAuth
+
 
 struct HomeView: View {
     
@@ -28,19 +28,7 @@ struct HomeView: View {
                 }
             }
             
-            Button {
-                try! Auth.auth().signOut()
-                userInfo.username = ""
-                userInfo.password = ""
-                userInfo.loggedIn.toggle()
-                viewState = .authentication
-            } label: {
-                Text("Sign out")
-                    .font(Constants.buttonFont)
-                    .frame(width: 300, height: 50)
-                    .background(Color.white.opacity(0.8))
-                    .cornerRadius(20)
-            }.padding()
+
         }
     }
 }

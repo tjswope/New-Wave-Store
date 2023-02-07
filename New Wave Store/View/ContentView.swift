@@ -37,6 +37,7 @@ struct ContentView: View {
                             Image(systemName: "house")
                             Text("home")
                         }
+                    
                 } else {
                     HomeView(viewState: $viewState, index: $index)
                         .tabItem {
@@ -49,6 +50,12 @@ struct ContentView: View {
                     .tabItem {
                         Image(systemName: "cart")
                         Text("cart")
+                    }
+                
+                SettingsView(viewState: $viewState)
+                    .tabItem {
+                        Image(systemName: "gear")
+                        Text("settings")
                     }
             }.accentColor(Color.highlight)
         }

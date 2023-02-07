@@ -11,6 +11,7 @@ import FirebaseAuth
 class UserInfo: ObservableObject{
     @Published var username: String
     @Published var password: String
+    @Published var image: UIImage = UIImage(named: "default")!
     @Published var loggedIn: Bool = false
     
     init(username: String = "", password: String = ""){
