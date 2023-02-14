@@ -12,6 +12,7 @@ class UserInfo: ObservableObject{
     @Published var username: String
     @Published var password: String
     @Published var loggedIn: Bool = false
+    @Published var image: UIImage = UIImage(named: "default")!
     
     init(username: String = "", password: String = ""){
         self.username = username

@@ -8,4 +8,5 @@ target 'New Wave Store' do
   # Pods for New Wave Store
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
+	pod 'Firebase/Storage'
 end

@@ -50,6 +50,12 @@ struct ContentView: View {
                         Image(systemName: "cart")
                         Text("cart")
                     }
+                
+                SettingsView(viewState: $viewState)
+                    .tabItem {
+                        Image(systemName: "gear")
+                        Text("settings")
+                    }
             }.accentColor(Color.highlight)
         }
     }

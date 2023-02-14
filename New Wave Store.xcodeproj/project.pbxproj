@@ -25,6 +25,8 @@
 		09D6F8432927C2DA009F4573 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6F8422927C2DA009F4573 /* Constants.swift */; };
 		09D6F8472927C4BA009F4573 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6F8462927C4BA009F4573 /* ProductListView.swift */; };
 		09D6F8492927F871009F4573 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6F8482927F871009F4573 /* HomeView.swift */; };
+		09F55D8A299BB7B400AA8027 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F55D89299BB7B400AA8027 /* ImagePicker.swift */; };
+		09F55D8C299BB80700AA8027 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F55D8B299BB80700AA8027 /* SettingsView.swift */; };
 		09FA29162934EB6100A68590 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA29152934EB6100A68590 /* ProductDetailView.swift */; };
 		A096D43C7509D1FAF3E5A0C7 /* Pods_New_Wave_Store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4217C98DA4433FC1064F233F /* Pods_New_Wave_Store.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,8 @@
 		09D6F8422927C2DA009F4573 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		09D6F8462927C4BA009F4573 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		09D6F8482927F871009F4573 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		09F55D89299BB7B400AA8027 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		09F55D8B299BB80700AA8027 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		09FA29152934EB6100A68590 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		37ABB2A8AB8FD532F49F7CF8 /* Pods-New Wave Store.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New Wave Store.release.xcconfig"; path = "Target Support Files/Pods-New Wave Store/Pods-New Wave Store.release.xcconfig"; sourceTree = "<group>"; };
 		4217C98DA4433FC1064F233F /* Pods_New_Wave_Store.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_New_Wave_Store.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,9 +140,11 @@
 				09D6F8322926B269009F4573 /* ContentView.swift */,
 				09D6F8462927C4BA009F4573 /* ProductListView.swift */,
 				09D6F8482927F871009F4573 /* HomeView.swift */,
+				09F55D89299BB7B400AA8027 /* ImagePicker.swift */,
 				09FA29152934EB6100A68590 /* ProductDetailView.swift */,
 				096499432938D9880081086D /* CartItemView.swift */,
 				096499452938DB700081086D /* CartView.swift */,
+				09F55D8B299BB80700AA8027 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +284,8 @@
 				0974A32F298805DF00A6FF41 /* SignupView.swift in Sources */,
 				096499462938DB700081086D /* CartView.swift in Sources */,
 				09D6F8472927C4BA009F4573 /* ProductListView.swift in Sources */,
+				09F55D8C299BB80700AA8027 /* SettingsView.swift in Sources */,
+				09F55D8A299BB7B400AA8027 /* ImagePicker.swift in Sources */,
 				094DC8B12991536200B6838D /* ForgotPassword.swift in Sources */,
 				0974A32B2988016A00A6FF41 /* AuthenticationView.swift in Sources */,
 				09FA29162934EB6100A68590 /* ProductDetailView.swift in Sources */,
