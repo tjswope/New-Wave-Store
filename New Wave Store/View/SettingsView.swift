@@ -7,6 +7,7 @@
 import SwiftUI
 import FirebaseAuth
 import FirebaseStorage
+import FirebaseDatabase
 
 struct SettingsView: View {
     @EnvironmentObject var userInfo: UserInfo
@@ -61,7 +62,15 @@ struct SettingsView: View {
 
             // save the image in firebase storage
             storage.putData(imageData) { meta, error in
-                
+                storage.downloadURL(completion: { url, error in
+                    if let url = url{
+                        self.userInfo.imageURL = url.absoluteString
+                        
+                        let database = Database.database().reference().child("users/\(uid)")
+                                              
+                        database.setValue(userInfo.dictionary)
+                    }
+                })
             }
         } content: {
             ImagePicker(selectedImage: $userInfo.image)
