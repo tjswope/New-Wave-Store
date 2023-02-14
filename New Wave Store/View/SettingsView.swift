@@ -8,6 +8,7 @@
 import SwiftUI
 import FirebaseAuth
 import FirebaseStorage
+import FirebaseDatabase
 
 struct SettingsView: View {
     
@@ -26,6 +27,17 @@ struct SettingsView: View {
                 .clipShape(Circle())
             
             Spacer()
+            
+            
+            TextField("what is your address?", text: $userInfo.address)
+                .font(Constants.textFont)
+                .padding()
+                .disableAutocorrection(true)
+                .onSubmit {
+                    guard let uid = Auth.auth().currentUser?.uid else {return}
+                    let database = Database.database().reference().child("users/\(uid)")
+                    database.setValue(self.userInfo.dictionary)
+                }
             
             Button {
                 showSheet.toggle()
@@ -60,7 +72,15 @@ struct SettingsView: View {
             guard let imageData = userInfo.image.jpegData(compressionQuality: 0.5) else { return }
             
             storage.putData(imageData) { meta, error in
-                
+                if let _ = meta {
+                    storage.downloadURL { url, error in
+                        if let url = url{
+                            self.userInfo.imageURL = url.absoluteString
+                            let database = Database.database().reference().child("users/\(uid)")
+                            database.setValue(self.userInfo.dictionary)
+                        }
+                    }
+                }
             }
             
         } content: {

@@ -30,6 +30,8 @@ struct SignupView: View {
                     .font(Constants.textFont)
                     .padding()
                     .disableAutocorrection(true)
+
+                    
                     
                 SecureField("password", text: $userInfo.password)
                     .font(Constants.textFont)
